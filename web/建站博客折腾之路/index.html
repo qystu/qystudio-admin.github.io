@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-    <meta name="robots" content="noindex,nofollow">
+    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -22,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>404 Not Found - 青云工作室</title>
+  <title>建站博客折腾之路 - 青云工作室</title>
+  
+    <meta name="keywords" content="博客,建站">
   
 
   
@@ -106,13 +108,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
       <p class="title"></p>
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a id="s-comment" class="fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a id="s-toc" class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
       </ul>
     </div>
@@ -595,7 +599,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper page dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg"></div>
           
@@ -658,8 +662,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
-<div class='l_main no_sidebar'>
-  <article class="article post white-box reveal md shadow article-type-page" id="page" itemscope itemprop="blogPost">
+<div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
 
 
@@ -669,7 +673,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title">
-        404
+        建站博客折腾之路
       </h1>
       <div class='new-meta-box'>
         
@@ -686,6 +690,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
             
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/web/">web</a>
+    </a>
+  </div>
+
 
           
         
@@ -693,7 +704,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2021年4月9日</p>
+    <p>发布于：2021年3月6日</p>
   </a>
 </div>
 
@@ -704,7 +715,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="404" data-path="/404.html">
+      <div id="lc-pv" data-title="建站博客折腾之路" data-path="/web/%E5%BB%BA%E7%AB%99%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -722,11 +733,50 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  <p class='p logo center huge'>404</p>
-<p class='p center bold'>很抱歉，您访问的页面不存在</p>
-<p class='p center small'>可能是输入地址有误或该地址已被删除</p>
-
+  <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>想必很多人都有一个属于自己的草根站长梦想，但却由于技术水平、资金、关系资源等种种原因，往往徘徊在坚持与放弃之间！“梦想还是要有的，万一实现了呢！”没错，今天我就要帮助那些有站长梦的人实现这个梦想，不需要你会敲代码，今天我们攻克技术、资金、资源难关拿下一个网站！</p>
+<p>现在市面上的博客很多，如CSDN，博客园，简书等平台，可以直接在上面发表，用户交互做的好，写的文章百度也能搜索的到。缺点是比较不自由，会受到平台的各种限制和恶心的广告。</p>
+<p>作为一个程序员，我无时无刻不想拥有一个自己的个人博客网站，也从未放弃过探索这条道路，从网站编程开始，慢慢接触云服务器。中间经历了很多曲折的路，技术不达标、不够资金买云服务</p>
+<p>而自己购买域名和服务器，搭建博客的成本实在是太高了，不光是说这些购买成本，单单是花力气去自己搭这么一个网站，还要定期的维护它，对于我们大多数人来说，实在是没有这样的精力和时间。</p>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>所以我的网站将发布以下系列文章</p>
+<ul>
+<li>hexo博客建站系列文章</li>
+<li>wordpress博客建站系列文章</li>
+<li>discuz论坛建站系列文章</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>我的文章将以不间断的形式更新，作者今年会考更新比较慢，勿催更，谢谢</p>
+<div><h1>推荐文章<span style="font-size:0.45em; color:gray">（由<a target="_blank" rel="noopener" href="https://github.com/huiwang/hexo-recommended-posts">hexo文章推荐插件</a>驱动）</span></h1><ul><li><a href="https://www.qystudio.ltd/web/%E4%BD%BF%E7%94%A8PicGo-GitHub%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/">使用PicGo+GitHub搭建免费个人图床</a></li><li><a href="https://www.qystudio.ltd/web/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">hexo史上最全搭建教程</a></li><li><a target="_blank" rel="noopener" href="http://www.hui-wang.info/2018/01/04/%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%BA%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5%E5%8D%87%E7%BA%A7%E6%8D%A2%E4%BB%A3/">用人工智能为友情链接升级换代</a></li><li><a target="_blank" rel="noopener" href="http://www.hui-wang.info/2017/12/17/%E6%B5%81%E9%87%8F%E7%BF%BB%E4%BA%86%E5%8D%81%E5%80%8D%E4%BB%A5%E5%90%8E/">流量翻了十倍以后</a></li><li><a target="_blank" rel="noopener" href="https://blogs.kainy.cn/2010/02/你的嘴为什么寄放在了别人的博客上？/">你的嘴为什么寄放在了别人的博客上？</a></li></ul></div>
   
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://www.qystudio.ltd/web/%E5%BB%BA%E7%AB%99%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF/>https://www.qystudio.ltd/web/%E5%BB%BA%E7%AB%99%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+        <div class='donate'>
+          <div class='imgs'>
+            
+              <img src='https://cdn.jsdelivr.net/gh/qystudio0/picture/wechatpay.jpg'>
+            
+          </div>
+        </div>
+      
+    </div>
   
   
     
@@ -735,6 +785,76 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
       
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-07T14:01:37+00:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年3月7日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>博客</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%BB%BA%E7%AB%99/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>建站</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.qystudio.ltd/web/%E5%BB%BA%E7%AB%99%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF/&title=建站博客折腾之路 - 青云工作室&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.qystudio.ltd/web/%E5%BB%BA%E7%AB%99%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF/&title=建站博客折腾之路 - 青云工作室&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.qystudio.ltd/web/%E5%BB%BA%E7%AB%99%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE%E4%B9%8B%E8%B7%AF/&title=建站博客折腾之路 - 青云工作室&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
     </div>
   </div>
 
@@ -742,6 +862,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
 
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/web/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>hexo史上最全搭建教程</p>
+          <p class='content'>
+  71a1a954455ab6da2f1b5d082074dda62f7bed7084d6c18e775283e1596e40b46e98289fd405de0af66e2262e5b755...</p>
+        </a>
+      
+      
+        <a class='next' href='/software/%E6%97%A0%E5%B9%BF%E5%91%8A%E3%80%81%E6%97%A0%E6%8E%A8%E9%80%81%EF%BC%8C%E6%9C%80%E6%9C%80%E7%BA%AF%E5%87%80%E7%9A%84WPS%E7%89%88%E6%9C%AC/'>
+          <p class='title'>无广告、无推送，最最纯净的WPS版本<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>无广告、无推送，最最纯净的WPS版本另附四大权限与下载地址
+
+
+前言就在去年12月，教育部考试中心突然发布《关于做好2021年全国计算机等级考试工作的通知》，新增计算机考试科目，正式将国产办公软...</p>
+        </a>
+      
+    </div>
   
 </article>
 
@@ -765,6 +904,29 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </div>
 <aside class='l_side'>
   
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-text">目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol>
+    </div>
+  </section>
+
+
+  
+
 
 </aside>
 
@@ -776,21 +938,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="建站博客折腾之路";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>

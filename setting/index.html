@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-    <meta name="robots" content="noindex,nofollow">
+    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -22,9 +22,11 @@
 
   <!-- 页面元数据 -->
   
-  <title>404 Not Found - 青云工作室</title>
+  <title>setting - 青云工作室</title>
   
 
+  
+    <meta name="description" content="有东西被加密了, 请输入密码查看.">
   
 
   <!-- feed -->
@@ -106,13 +108,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
       <p class="title"></p>
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a id="s-comment" class="fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a id="s-toc" class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
       </ul>
     </div>
@@ -595,7 +599,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper page dock' style="display: ;">
+        <div id="full" class='cover-wrapper page dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg"></div>
           
@@ -658,7 +662,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
-<div class='l_main no_sidebar'>
+<div class='l_main'>
   <article class="article post white-box reveal md shadow article-type-page" id="page" itemscope itemprop="blogPost">
   
 
@@ -669,7 +673,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title">
-        404
+        setting
       </h1>
       <div class='new-meta-box'>
         
@@ -693,7 +697,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2021年4月9日</p>
+    <p>发布于：2021年4月11日</p>
   </a>
 </div>
 
@@ -704,7 +708,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="404" data-path="/404.html">
+      <div id="lc-pv" data-title="setting" data-path="/setting/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -722,10 +726,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  <p class='p logo center huge'>404</p>
-<p class='p center bold'>很抱歉，您访问的页面不存在</p>
-<p class='p center small'>可能是输入地址有误或该地址已被删除</p>
-
+  <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码错误, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="5d26f76b4cb47866faf5e391aa409488567733a6115d322055a033dc11a4d072">71a1a954455ab6da2f1b5d082074dda6d1bf4f492788e453081a57412e7de7f5405260ae752fd89c8708228b4460210b0453f50ce08e7239e0420d3e7c849ebff494ee3fba14f1480e2bec0f859c595b277890a2e98f11e03380b08257504e3c1b1f38892008aa70eec667caa7d9ebc2e5165eb5be2f0039e876adb2be80e58be1cb95db6a83fe27f81c5036c5110bdf5f54cc989911e2aca8a7801e1bca3a61ee98b6994b5086ff65273b7e827046819bb3ab4cd0d03058420f7bd33a961f846a16633560986a6fd87244e8d833061010b28d845c9f3fc9e9629cb8cb3f29624ff5668216cbe21d638ab93ebc614102f5897e0ee2136e65393634a7d511031f4c1830fdee206456f531ad21cee3d89b9cf877525caacc7d826edf980f29898fb70d620dca6e314a8c93a45b1970e574331dc7f68d14c36ef6fc6f2e654aaeee469638bb28fb2807a7dcbba1c813724856f78c76f4e71be945ee16ed7772a3e1a463f9cc2858ab4e7058ab8d196feb32f07695b7a6d9f27496ec71640425d15b664a2eb86a4b3e86993dae358cdd7fb91bbabca15137a8fd624725fd185dbcd739f4706a9c8bae581e57020c9cac0df7c779399c1d30608b7446599c1da894090f882c6a82e557a7ff04d43adbb3996440dca3f7d24c347e52695afe734a978cacb98b1f9ad3a0bf7d1eef58be38f32499a91acf4815c35e6019cbdad6f0e8d2f6b34d2a1003479723203054c06de246c64c3daad5d51ad903e700cad6d4160e85e56069ec83a6616db881cb6cf40058480c0888249159f1f9e53de7b055b14b931e0a8a0139de117aaf2bff681bf0bec19442a6907d55eb790193cf08e807d6505b9c6dbe55adf93a3ae6b2c45a69fd32ef40cb93910e6016342cffcf38f62a864d5b2c64644bcab78c2fd03af7c2c2d9a2a33e03ede358da4ba3a6c340a6ea89f18ffb4f1a5ec452392d5a63b8dbc83d3fa657c83584576015c744c273d31d5eea2918903535346610858893ed275e1856263bb3b82e44bd49efa5ed679da09d91f8ec77667942cf8bdb6a7b6a5dff1884e497ddd5b986c33b144c7466eb8ff2150dce8f9a0805863d3435271f279adaa5e9d80644733327bdca154c4f7fe5ba745ea535954464fd1f377d16f2dcd35399f31a6b55414060116c201bab066002fab60b1b73a2fd7ba592d94bbad677c1ca00513785e878f8b39f3cdfa8721a8c2923c8d702abc4c6f033a183e5582546d6bf1736366a590e4e39256afbc2f42afb6735bb4fc70a36198607bca9d00b58661bd3af766345a2330d750a7416b9f877800d6fb652acc2719f06aa0bc980c9c1cb15c00320c67b53928594fa0e83149339f9d21e1ffd5249be6bf3045e4c734fe8634f6b685a77ef620b9d880f6574b3f97c7d0954569ebaf89b49c6411895bf3845dab5980c705613d541883a0fbe03826b888152724f140163a3b4f6bbf1d5db5874d0ad22d2e707d3b348933bc8961dbec529236aaba78634b32ab0eb603bf2379733d285bca2e1eaffe2b898e0a7b869e2744ddd91371de4ace1bb17072f5d2f7a4081b9450f3cd9485d5d86be0abe4bf9f9376ccc2b29ca0323ae4f5a4698bd46cfb017b05e0940a143c48973fd2a21e041f6eb5ebbbf8dc430c044da005a9e40f2c2ce5b8b0e3009eb6d6db7ceab537ea9f4901d8905cbee5b97c7cd409d4b31b5609e909374464a3c14fd711759aebed1ead57bf0f6a5ed1a7590aa64b98abe8ba35525ffe2552fd6b82dc369ef78c4efa609764fcd70747abefe8c6eb6c0c6fc56377d7f421d2a2819414bf4e4c8f9114f8237805659e97f8be998344ea93d35e5b86d4d950a2ee81fdc1af8f6ba78f045de7bc6b2826f6fb33a97d84ae7cf66e073b13ef9695b0855112d6efcc930fdb8ed3511af410af5c7101b7d07a6954e266276ea82d05f7aaf926b2a29b3811e49669d83b3a031f24d6cb8fe6511d39c47c3e2e0ac0d4328aa157c3d2d649368e1f56f949582cc2270273793c16b3548228572d4fadec19ee53bc245535ebd39c4df7d87a8e8e098ed949d69a911cd3f3ed7cbeb7e7ff3227277a8f3a4eb69f340db53879d9fc3f35a21649a11f2583db2d0311cb104137c2ee70da87e57e6725d339cbf67cfa9709c7c360a5ca0747711e86aa3019ca53d16ab28610acc6dc749d41b36d30f7bd8f32a40d7aa1e33fbcb3a2bdea767388c635a8afba17ff5f80ca4ff3cc8e482f9fd43ae588e507bca7406c83e14bb3fc650a5ea381c99a6c0be8ba3890b94b334705928ed1ed626b09297fb3edb480759115c0ae98ddd723d10051a723877bf0b0b0f1e9a822dbd20693afa218d214982e4befc979653e7241e324936f3e8bd8bd792190b4f879e754e2023ef22c60872e9836a627639a05bff3f97c217de360eeb544dcd2b17a3b1e2738be6ffd6468497f4fe8943b430b5a4fe34ee7814b973a6ae2a1fdbfa0a30987de806dec67d2bc17d53f442fde128998dad4a892b932a6b23bc0684c8aafe1fc8dfdf3d2c4593a2433c678fc240d7f2d63eccf0a355c26a1d4d469fdb126a6f2c3469238da0e43e452a083b937dcf3a1b12d392eb1d0d36ffd7548b914bcffa8409b2e69c027433afd1049f0fcfeb60dfdf6cd7006a08ca055eda4a3b82e0fb5fd0bc8e7b13b0c3e1f76b4599d7650c3480c614b172ad75cb8634b439a1d7323f43c5f44d061c5b67dda79368b869633c5f8951e3e7061924a7485a8549456e9727a0135e9473e70a79c6d526159b6d5cc458e7aae067a7cf5ab9410cfcb28d26dbc1e4a30a9b4bb6b1708a1f4fbdf6762f3e453b5c0c5e947cedcbae735bf415aa4627bc203a49331c582a4d72abc018f5ae6ce1ed4a7e7a1741c25f5d2cb471da75c4252cb0f878d7208bec4f8706c32250e6f67673555f</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">您好, 这里需要密码.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
   
   
   
@@ -734,6 +749,73 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-04-11T16:16:37+00:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年4月11日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.qystudio.ltd/setting/index.html&title=setting - 青云工作室&summary=有东西被加密了, 请输入密码查看."
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.qystudio.ltd/setting/index.html&title=setting - 青云工作室&summary=有东西被加密了, 请输入密码查看."
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.qystudio.ltd/setting/index.html&title=setting - 青云工作室&summary=有东西被加密了, 请输入密码查看."
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
       
     </div>
   </div>
@@ -746,25 +828,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </article>
 
 
-  
-
-  <article class="post white-box reveal shadow" id="comments">
-    <p ct><i class='fas fa-comments'></i> 评论</p>
-    
-    <div id="waline">
-  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
-</div>
-
-  </article>
-
-
-
 
 
 
 </div>
 <aside class='l_side'>
   
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" style="display:none" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9F%E8%AE%A1%E4%B8%8E%E8%B5%84%E6%BA%90"><span class="toc-text">统计与资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E4%BD%9C%E4%B8%8E%E7%BB%B4%E6%8A%A4"><span class="toc-text">写作与维护</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E4%B8%8E%E8%AE%A1%E7%AE%97"><span class="toc-text">域名与计算</span></a></li></ol>
+    </div>
+  </section>
+
+
+  
+
 
 </aside>
 
@@ -783,14 +875,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
